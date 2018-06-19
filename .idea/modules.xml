@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/loop.iml" filepath="$PROJECT_DIR$/loop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pf-java.iml" filepath="$PROJECT_DIR$/pf-java.iml" />
     </modules>
   </component>
 </project>

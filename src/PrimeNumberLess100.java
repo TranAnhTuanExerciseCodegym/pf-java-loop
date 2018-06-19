@@ -1,18 +1,21 @@
 public class PrimeNumberLess100 {
     public static void main(String[] args) {
-        for (int i = 2; i < 100; i++) {
-            int j = 2;
+        int count = 0;
+        for (int number = 2; number < 100; number++) {
             boolean prime = true;
-            while (j <= Math.sqrt(i)) {
-                if (i % j == 0) {
+            int y = 2;
+            while (y <= Math.sqrt(number)) {
+                if (number % y == 0) {
                     prime = false;
                     break;
                 }
-                j++;
+                y++;
             }
             if (prime) {
-                System.out.println("prime :" + i);
+                count += 1;
+                System.out.println(number);
             }
         }
+        System.out.println("Have all " + count + " prime numbers");
     }
 }
