@@ -13,9 +13,10 @@ public class PrimeNumberLess100 {
             }
             if (prime) {
                 count += 1;
-                System.out.println(number);
+                System.out.print(number + "\t");
             }
         }
+        System.out.println();
         System.out.println("Have all " + count + " prime numbers");
     }
 }

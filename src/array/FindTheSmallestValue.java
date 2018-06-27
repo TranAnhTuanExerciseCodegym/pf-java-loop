@@ -18,6 +18,6 @@ public class FindTheSmallestValue {
                 min = array[i];
             }
         }
-        System.out.println("xxxx" + min);
+        System.out.print("Smallest Value: " + min);
     }
 }
