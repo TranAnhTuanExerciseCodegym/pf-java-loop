@@ -5,20 +5,10 @@ import java.util.Scanner;
 public class ReverseElement {
     public static void main(String[] args) {
         int size;
-        int[] array;
+        int[] array = new int[5];
         Scanner scanner = new Scanner(System.in);
-        do {
-            System.out.println("Enter array size: ");
-            size = scanner.nextInt();
-            if (size > 10) {
-                System.out.println("Not exceed 10");
-            }
-        } while (size > 10);
-
-        array = new int[size];
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Enter element " + (i + 1) + ": ");
-            array[i] = scanner.nextInt();
+            array[i] = (int) (Math.random() * 10);
         }
 
         System.out.print("Array List: ");
@@ -29,8 +19,8 @@ public class ReverseElement {
 
         for (int i = 0; i < array.length / 2; i++) {
             int temp = array[i];
-            array[i] = array[size - 1 - i];
-            array[size - 1 - i] = temp;
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = temp;
         }
 
         System.out.println("\n" + "Reverse array: ");
