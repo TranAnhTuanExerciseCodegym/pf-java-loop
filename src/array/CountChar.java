@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class CountChar {
     public static void main(String[] args) {
-        String name = "tran anh tuan";
+        String name = "minh tuan";
+        System.out.println(name);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a character: ");
         String enter = scanner.next();

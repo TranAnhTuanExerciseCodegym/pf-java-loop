@@ -24,7 +24,7 @@ public class SymmetricNumbers {
             int remain = number % 10;
             number = number / 10;
             reverse = (reverse * 10) + remain;
-        } while (number > 10);
+        } while (number >= 10);
         reverse = (reverse * 10) + number;
         return reverse;
     }

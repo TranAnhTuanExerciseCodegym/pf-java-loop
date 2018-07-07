@@ -8,6 +8,7 @@ public class Find20Prime {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter: ");
         number = scanner.nextInt();
+
         while (count < number) {
             boolean prime = true;
             for (int i = 2; i <= Math.sqrt(N); i++) {
